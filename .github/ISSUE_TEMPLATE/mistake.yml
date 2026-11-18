@@ -1,0 +1,51 @@
+name: Report a mistake
+description: "Tell us something wrong in Maargam: a name, a verse, a translation or a picture. One minute is enough."
+title: "Mistake: "
+labels: ["reader-report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping. Say where the mistake is and what you saw; one minute is
+        enough. We do not ask for any personal details. A screenshot is welcome but
+        optional, and you can paste or drag a picture into the last box.
+  - type: input
+    id: where
+    attributes:
+      label: Where is the mistake?
+      description: The book, chapter and verse (for example Luke 19:2), or the name of the person, place or story.
+      placeholder: Luke 19:2, or Zacchaeus
+    validations:
+      required: true
+  - type: textarea
+    id: shows
+    attributes:
+      label: What does the app show?
+      description: Copy the words you see, or describe the screen.
+      placeholder: The page says…
+    validations:
+      required: true
+  - type: textarea
+    id: should-be
+    attributes:
+      label: What should it be?
+      description: The correct words or name, as your Bible has it.
+      placeholder: It should say…
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Which language is the page with the mistake?
+      options:
+        - Telugu
+        - English
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: Paste or drag a picture here if you have one. Leave this empty if you do not.
+    validations:
+      required: false
