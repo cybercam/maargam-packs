@@ -13,6 +13,20 @@ compiled into the app (`SHA256SUMS` here lists the same hashes).
 | `packs-1/eng-asv-1.sqlite` | American Standard Version (1901) | English | Public domain | eBible.org `eng-asv` |
 | `packs-1/tel-otcv-1.sqlite` | Biblica® Open Telugu Contemporary Version™ (OTCV) | Telugu | CC BY-SA 4.0 | eBible.org `telotsa` |
 
+## `packs-2/` — the Old Testament halves
+
+The same four versions, each as its own **Old Testament** file (`<id>-ot-1.sqlite`), built by
+the same `npm run build:packs` from the same archives and published the same way. The app uses
+one only if its size and SHA-256 equal the catalog compiled into it; the downloaded OT version
+is what lets the book picker open Genesis onwards.
+
+| File | Version | Language | Licence | Source |
+|---|---|---|---|---|
+| `packs-2/eng-bsb-ot-1.sqlite` | Berean Standard Bible (BSB), Old Testament | English | Public domain | eBible.org `engbsb` |
+| `packs-2/eng-kjv-ot-1.sqlite` | King James Version (1769), Old Testament | English | Public domain (outside the UK) | eBible.org `eng-kjv` |
+| `packs-2/eng-asv-ot-1.sqlite` | American Standard Version (1901), Old Testament | English | Public domain | eBible.org `eng-asv` |
+| `packs-2/tel-otcv-ot-1.sqlite` | Biblica® Open Telugu Contemporary Version™ (OTCV), Old Testament | Telugu | CC BY-SA 4.0 | eBible.org `telotsa` |
+
 **OTCV attribution (CC BY-SA 4.0):** Biblica® Open Telugu Contemporary Version™, Copyright
 © 1976, 1990, 2022, 2024 by Biblica, Inc. Licensed under the Creative Commons
 Attribution-ShareAlike 4.0 International License
